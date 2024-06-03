@@ -1,11 +1,70 @@
 body {
-    background-color: rgb(141, 111, 141);
+    background-color: rgb(184, 167, 184);
+    margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
+
+    
+}
+@media (max-width: 415px) {
+    body {
+        background-color: rgb(184, 167, 184);
+        margin-top: 10em;
+        margin-left: .95em;
+        margin-right: 0em;
+    
+        
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1000em;
+    
 }
 .home
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.05em;
-    color: rgb(117, 82, 29);
+    color: rgb(92, 50, 8);
+}
+@media (max-width: 415px) {
+    .home{
+    font-size: 0.95em;
+    }
+}
+    @media (max-width: 415px) {
+    .ing {
+        font-size: 0.95em;
+        }
+}
+@media (max-width: 415px) {
+    .dir {
+        font-size: 0.95em;
+        }
+}
+@media (max-width: 415px) {
+    .nav {
+        font-size: 0.95em;
+        }
+}
+@media (max-width: 415px) {.button {
+    float: left;
+    display: inline-block;
+    padding: .05em .05em;
+    margin: .05em;
+    font-size: .05em;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(74, 59, 74);
+    border: none;
+    border-radius: .05em;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 }
 .dir
 {
@@ -19,12 +78,13 @@ body {
     font-size: 1.05em;
     color: rgb(27, 87, 42);
 }
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+.form
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.05em;
+    color: rgb(0, 0, 0);
 }
+
 .h1-1 {
     order: -3;
 }
@@ -37,14 +97,25 @@ body {
 .p-2 {
     order: 1;
 }
+.nutrition {
+    order: 2;
+}
+table, th, td {
+    border: .02em solid;
+  }
+  img {
+    max-width: 75%;
+    height: auto;
+  }
 .button {
+    float: left;
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
     font-size: 16px;
     text-decoration: none;
     color: white;
-    background-color: #007BFF;
+    background-color: rgb(74, 59, 74);
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -53,5 +124,12 @@ body {
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: rgb(133, 78, 133);
 }
+.nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0; 
+    width: 93%; 
+    }
